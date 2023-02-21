@@ -1,6 +1,6 @@
-import LegalSection from 'components/LegalSection';
-import LegalSubsection from 'components/LegalSubsection';
 import Link from 'next/link';
+import LegalSection from '../../components/LegalSection';
+import LegalSubsection from "../../components/LegalSubsection";
 
 const PrivacyPage = () => {
 	return (
@@ -145,12 +145,12 @@ const PrivacyPage = () => {
 								support@kbot.ca
 							</a>
 							<br />
-							<a
+							<Link
 								className="text-[#FFFFFF] hover:text-[#60A5FA]"
-								href="https://discord.gg/pvGPcSwc9y"
+								href="/discord"
 							>
 								Support server
-							</a>
+							</Link>
 						</p>
 					</LegalSection>
 				</div>

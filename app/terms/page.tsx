@@ -1,4 +1,5 @@
 import LegalSection from '../../components/LegalSection';
+import Link from "next/link";
 
 const TermsPage = () => {
 	return (
@@ -17,8 +18,7 @@ const TermsPage = () => {
 								}
 								<span className="text-[#FFFFFF] hover:text-[#60A5FA]">
 									<a href="/" target="_blank">
-										{' '}
-										https://kbot.ca{' '}
+										{' '}https://kbot.ca{' '}
 									</a>
 								</span>
 								website as well as any other media form, media channel, mobile
@@ -448,8 +448,7 @@ const TermsPage = () => {
 								Policy:
 								<span className="text-[#FFFFFF] hover:text-[#60A5FA]">
 									<a href="/privacy" target="_blank">
-										{' '}
-										https://kbot.ca/privacy
+										{' '}https://kbot.ca/privacy
 									</a>
 								</span>
 								. By using the Site, you agree to be bound by our Privacy Policy,
@@ -678,12 +677,12 @@ const TermsPage = () => {
 									support@kbot.ca
 								</a>
 								<br />
-								<a
+								<Link
 									className="text-[#FFFFFF] hover:text-[#60A5FA]"
-									href="https://discord.gg/pvGPcSwc9y"
+									href="/discord"
 								>
 									Support server
-								</a>
+								</Link>
 							</p>
 						</LegalSection>
 					</div>

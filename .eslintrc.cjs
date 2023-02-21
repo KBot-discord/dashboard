@@ -8,7 +8,7 @@ module.exports = {
 	plugins: ['@typescript-eslint/eslint-plugin', 'import', 'jsx-a11y', 'react', 'react-hooks'],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
-		project: './tsconfig.eslint.json',
+		project: './tsconfig.json',
 		ecmaVersion: 2020,
 		sourceType: 'module',
 		ecmaFeatures: {
@@ -23,7 +23,7 @@ module.exports = {
 		'import/resolver': {
 			typescript: {
 				alwaysTryTypes: true,
-				project: './src/tsconfig.json'
+				project: './tsconfig.json'
 			}
 		},
 		react: {

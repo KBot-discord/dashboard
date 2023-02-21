@@ -1,12 +1,11 @@
-.DS_Store
 node_modules
-/dist
-src/.env
-.env.*
-!.env.example
+/.next
+next-env.d.ts
+.eslintrc.cjs
+next.config.js
+postcss.config.js
+tailwind.config.js
 
 # Ignore files for PNPM, NPM and YARN
-pnpm-lock.yaml
-package-lock.json
 .yarn
 yarn.lock

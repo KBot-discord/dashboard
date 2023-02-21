@@ -12,10 +12,10 @@
     "node": "^18.x"
   },
   "scripts": {
-    "dev": "next dev src",
-    "build": "next build src",
-    "start": "next start src",
-    "lint": "next lint src",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
     "postinstall": "husky install .husky"
   },
   "dependencies": {
