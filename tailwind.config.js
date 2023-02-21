@@ -4,7 +4,7 @@
 module.exports = {
 	plugins: [require('daisyui')],
 	darkMode: 'class',
-	content: ['./src/**/*.{js,ts,jsx,tsx}'],
+	content: ['./app/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
 	theme: {
 		screens: {
 			xs: '540px',
