@@ -15,10 +15,11 @@
   },
   "include": [
     ".",
-    ".next/types/**/*.ts"
+    "./build/types/**/*.ts"
   ],
   "exclude": [
     ".next",
+    "build",
     "next.config.js"
   ]
 }

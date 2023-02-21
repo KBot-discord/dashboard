@@ -6,6 +6,7 @@ const nextConfig = {
 	experimental: {
 		appDir: true
 	},
+	distDir: './build',
 	async redirects() {
 		return [
 			{

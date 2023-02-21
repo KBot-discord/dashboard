@@ -2,7 +2,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=dotenv,yarn,nextjs
 
 ### dotenv ###
-src/.env
+.env
 .env.*
 !.env.example
 
@@ -19,6 +19,7 @@ package-lock.json
 # next.js
 .next/
 /out/
+src/build
 
 # production
 /build
