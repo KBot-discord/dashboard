@@ -1,5 +1,6 @@
 import LegalSection from '../../components/LegalSection';
 import Link from "next/link";
+import {baseMetadata} from "../../lib/util/baseMetadata";
 
 const TermsPage = () => {
 	return (
@@ -691,5 +692,9 @@ const TermsPage = () => {
 		</>
 	);
 };
+
+export const metadata = baseMetadata({
+	title: 'Terms of Service | KBot'
+});
 
 export default TermsPage;

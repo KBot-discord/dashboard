@@ -1,4 +1,3 @@
-import { generateBaseMetadata } from '../lib/util/generateBaseMetadata';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Sidebar from '../components/Sidebar';
@@ -28,7 +27,3 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 		</html>
 	);
 }
-
-export const metadata = generateBaseMetadata({
-	title: 'Home'
-});

@@ -1,18 +1,21 @@
-import type { TemplateString } from 'next/dist/lib/metadata/types/metadata-types';
 import type { Metadata } from 'next/dist/lib/metadata/types/metadata-interface';
+import type { AbsoluteString } from 'next/dist/lib/metadata/types/metadata-types';
 
 const url: string = 'https://kbot.ca';
 
 const siteName: string = 'KBot';
 
-const title: TemplateString = {
-	default: 'KBot',
-	template: '%s | KBot'
-};
-
 const description: string = 'A multi-feature Discord bot.';
 
-export function generateBaseMetadata(metadata?: Omit<Metadata, 'metadataBase'>): Metadata {
+export function baseMetadata({
+	title = 'KBot',
+	options
+}: {
+	title: string;
+	options?: Omit<Metadata, 'metadataBase' | 'title'>;
+}): Metadata {
+	const titleString: AbsoluteString = { absolute: title };
+
 	return {
 		metadataBase: new URL(url),
 		title,
@@ -38,7 +41,7 @@ export function generateBaseMetadata(metadata?: Omit<Metadata, 'metadataBase'>):
 			]
 		},
 		openGraph: {
-			title,
+			title: titleString,
 			description,
 			url,
 			siteName,
@@ -47,7 +50,7 @@ export function generateBaseMetadata(metadata?: Omit<Metadata, 'metadataBase'>):
 		},
 		twitter: {
 			card: 'summary',
-			title,
+			title: titleString,
 			description
 		},
 		robots: {
@@ -60,6 +63,6 @@ export function generateBaseMetadata(metadata?: Omit<Metadata, 'metadataBase'>):
 				noimageindex: true
 			}
 		},
-		...metadata
+		...options
 	};
 }

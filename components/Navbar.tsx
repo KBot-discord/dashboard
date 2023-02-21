@@ -2,20 +2,11 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faBook, faHeart } from '@fortawesome/free-solid-svg-icons';
 import { faDiscord, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Navbar = function () {
-	const [mounted, setMounted] = useState(false);
-
-	useEffect(() => {
-		setMounted(true);
-	}, []);
-
-	if (!mounted) return null;
-
 	return (
 		<nav className="navbar sticky top-0 z-50 h-16 w-full bg-primary shadow-md text-primary-content gap-2">
 			<div className="flex flex-1 gap-2">

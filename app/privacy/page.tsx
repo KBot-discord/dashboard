@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import LegalSection from '../../components/LegalSection';
 import LegalSubsection from "../../components/LegalSubsection";
+import {baseMetadata} from "../../lib/util/baseMetadata";
 
 const PrivacyPage = () => {
 	return (
@@ -158,5 +159,9 @@ const PrivacyPage = () => {
 		</main>
 	);
 };
+
+export const metadata = baseMetadata({
+	title: 'Privacy Policy | KBot'
+});
 
 export default PrivacyPage;

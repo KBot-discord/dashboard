@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import {baseMetadata} from "../lib/util/baseMetadata";
 
 const HomePage = () => {
 	return (
@@ -70,5 +71,9 @@ const HomePage = () => {
 		</>
 	);
 };
+
+export const metadata = baseMetadata({
+	title: 'Home | KBot'
+});
 
 export default HomePage;
