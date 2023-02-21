@@ -7,6 +7,8 @@ const siteName: string = 'KBot';
 
 const description: string = 'A multi-feature Discord bot.';
 
+const icon: string = 'https://kbot.ca/img/logo2.png';
+
 export function baseMetadata({
 	title = 'KBot',
 	options
@@ -46,12 +48,14 @@ export function baseMetadata({
 			url,
 			siteName,
 			locale: 'en-US',
-			type: 'website'
+			type: 'website',
+			images: icon
 		},
 		twitter: {
 			card: 'summary',
 			title: titleString,
-			description
+			description,
+			images: icon
 		},
 		robots: {
 			index: false,
