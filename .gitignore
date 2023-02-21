@@ -43,6 +43,13 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+### Svelte ###
+# gitignore template for the SvelteKit, frontend web component framework
+# website: https://kit.svelte.dev/
+
+.svelte-kit/
+package
+
 ### yarn ###
 # https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
 
