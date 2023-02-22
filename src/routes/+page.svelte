@@ -53,7 +53,7 @@
 				</h1>
 			</div>
 			<div class="flex flex-1 justify-center px-16 mt-4 sm:px-24 lg:mt-6 lg:justify-start lg:px-32">
-				<a href="/servers" class="btn no-animation w-full rounded-full normal-case sm:text-lg">
+				<a href="/guilds" class="btn no-animation w-full rounded-full normal-case sm:text-lg">
 					Go to Dashboard
 				</a>
 			</div>

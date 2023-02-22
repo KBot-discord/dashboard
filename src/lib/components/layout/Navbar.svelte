@@ -1,7 +1,9 @@
 <script lang="ts">
 	import ThemeToggle from '../ThemeToggle.svelte';
+	import BookIcon from '$lib/assets/images/book.svelte';
 	import DiscordIcon from '$lib/assets/images/discord.svelte';
 	import GithubIcon from '$lib/assets/images/github.svelte';
+	import HeartIcon from '$lib/assets/images/heart.svelte';
 	import PlusIcon from '$lib/assets/images/plus.svelte';
 	import logo from '$lib/assets/images/logo.png';
 </script>
@@ -46,9 +48,7 @@
 		>
 			<div class="flex justify-center items-center gap-2 mx-auto">
 				<span class="hidden lg:flex">Docs</span>
-				<span>
-					<PlusIcon />
-				</span>
+				<BookIcon height={16} width={16} />
 			</div>
 		</a>
 		<a
@@ -59,9 +59,7 @@
 		>
 			<div class="flex justify-center items-center gap-2 mx-auto">
 				<span class="hidden lg:flex">Add to Server</span>
-				<span>
-					<PlusIcon />
-				</span>
+				<PlusIcon height={16} width={16} />
 			</div>
 		</a>
 		<a
@@ -72,9 +70,7 @@
 		>
 			<div class="flex justify-center items-center gap-2 mx-auto">
 				<span class="hidden lg:flex">Discord Server</span>
-				<span>
-					<DiscordIcon />
-				</span>
+				<DiscordIcon height={18} width={20} />
 			</div>
 		</a>
 		<a
@@ -85,9 +81,7 @@
 		>
 			<div class="flex justify-center items-center gap-2 mx-auto">
 				<span class="hidden lg:flex">Source Code</span>
-				<span>
-					<GithubIcon />
-				</span>
+				<GithubIcon height={18} width={18} />
 			</div>
 		</a>
 		<a
@@ -98,9 +92,7 @@
 		>
 			<div class="flex justify-center items-center gap-2 mx-auto">
 				<span class="hidden lg:flex">Status</span>
-				<span>
-					<GithubIcon />
-				</span>
+				<HeartIcon height={18} width={18} />
 			</div>
 		</a>
 	</div>
